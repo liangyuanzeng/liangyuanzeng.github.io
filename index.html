@@ -6,7 +6,7 @@
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Georgia, "Times New Roman", serif;
       max-width: 850px;
       margin: 40px auto;
       padding: 0 20px;
@@ -132,30 +132,68 @@
       line-height: 1.45;
     }
 
-    .pub-authors,
-    .pub-links {
+    .pub-authors {
       font-size: 14px;
       line-height: 1.45;
+      color: #333;
       margin: 2px 0 2px 16px;
     }
 
-    .pub-authors {
-      color: #333;
-    }
-
-    .pub-links a {
-      margin-right: 4px;
-    }
-
-    .public-goods {
-      margin-left: 16px;
-    }
-
-    .public-good-item {
-      font-size: 13px;
+    .pub-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin: 2px 0 2px 16px;
+      font-size: 14px;
       line-height: 1.45;
+    }
+
+    .pub-actions a {
+      color: #1a5276;
+      text-decoration: none;
+    }
+
+    .pub-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .abstract-box {
+      display: contents;
+    }
+
+    .abstract-box summary {
+      color: #1a5276;
+      cursor: pointer;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .abstract-box summary:hover {
+      text-decoration: underline;
+    }
+
+    .abstract-box summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .abstract-box summary::before {
+      content: "[";
+    }
+
+    .abstract-box summary::after {
+      content: "]";
+    }
+
+    .abstract-text {
+      flex-basis: 100%;
+      margin-top: 8px;
+      padding: 10px 12px;
+      font-size: 14px;
+      line-height: 1.55;
       color: #333;
-      margin-bottom: 4px;
+      text-align: justify;
+      border-left: 2px solid #ddd;
     }
   </style>
 </head>
@@ -209,33 +247,56 @@
 
       <div class="timeline-item">
         <div class="timeline-year">2024 - Present</div>
-        <div class="timeline-desc">Ph.D. in Politics, Princeton University</div>
+        <div class="timeline-desc">
+          Ph.D. in Politics, Princeton University
+        </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-year">2022 - 2024</div>
-        <div class="timeline-desc">M.A. in International and Regional Studies, University of Michigan</div>
+        <div class="timeline-desc">
+          M.A. in International and Regional Studies, University of Michigan
+        </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-year">2016 - 2020</div>
-        <div class="timeline-desc">B.A. in Political Science, Fudan University</div>
+        <div class="timeline-desc">
+          B.A. in Political Science, Fudan University
+        </div>
       </div>
 
       <h2>Working Papers (Selected)</h2>
 
       <div class="pub-item">
+
         <div class="pub-title">
-          <strong>Non-Retaliatory Coercion and Subnational Support for the Incumbent</strong>
+          <strong>
+            Non-Retaliatory Coercion and Subnational Support for the Incumbent
+          </strong>
         </div>
 
         <div class="pub-authors">
           Min Byung Chae, Shu-Ting Wu, Liangyuan Zeng
         </div>
 
-        <div class="pub-links">
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5501038">[Draft]</a>
+        <div class="pub-actions">
+
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5501038">
+            [Draft]
+          </a>
+
+          <details class="abstract-box">
+            <summary>Abstract</summary>
+
+            <div class="abstract-text">
+              Most research on foreign economic coercion examines retaliatory restrictions following a target's provocation. We examine a case of coercion without any publicly identifiable provocation and ask whether rally-around-the-flag effects emerge. Absent such a provocation, non-retaliatory coercion leaves the public little basis to blame their incumbent for causing the restriction, although governance-based critique remains possible. The resulting gains in the incumbent's support should concentrate in communities directly exposed to the coercion. We consider Mainland China's 2021 pineapple ban, a case of non-retaliatory coercion that was abruptly announced and dismissed as pretextual across Taiwan's political spectrum. Using quarterly surveys from 2016 to 2024 and a difference-in-differences design exploiting county-level variation in pineapple production, we find that exposure to the ban increased approval, trust, and favorable evaluations of the incumbent president, with trust and leadership effects detectable even among opposition supporters. Records from Legislative Yuan debates are consistent with our proposed mechanism.
+            </div>
+
+          </details>
+
         </div>
+
       </div>
 
     </div>
