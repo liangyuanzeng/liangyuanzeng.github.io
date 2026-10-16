@@ -253,6 +253,10 @@ a {
   margin: 6px 0 0 16px;
 }
 
+.course-instructor {
+  font-weight: normal;
+}
+
 .course-links {
   font-size: 14px;
   line-height: 1.45;
@@ -272,4 +276,29 @@ body > h2:first-of-type {
 .course-title,
 .item-title {
   font-weight: bold;
+}
+
+.data-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.data-gallery figure {
+  margin: 0;
+}
+
+.data-gallery img {
+  display: block;
+  height: 400px;
+  width: auto;
+}
+
+.data-gallery figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #555;
 }
