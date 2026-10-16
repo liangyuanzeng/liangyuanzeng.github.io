@@ -1,0 +1,275 @@
+/* Keep a 900px desktop canvas; mobile browsers fit it to the screen.
+   No initial/maximum scale or user-scalable restriction: pinch zoom stays available. */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #222;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0;
+}
+
+header .affiliation {
+  color: #1a5276;
+  margin-top: 2px;
+}
+
+.nav {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.nav a {
+  color: #1a5276;
+  margin-left: 18px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.sidebar-block {
+  margin-bottom: 14px;
+}
+
+.sidebar-block h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #1a5276;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin: 0 0 6px 0;
+}
+
+.sidebar-block p {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 2px 0;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.main > p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.55;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.timeline-item {
+  margin-bottom: 10px;
+}
+
+.timeline-year {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.timeline-desc {
+  font-size: 16px;
+  line-height: 1.45;
+  color: #333;
+  margin-left: 16px;
+}
+
+a {
+  color: #1a5276;
+}
+
+.pub-item {
+  margin-bottom: 16px;
+}
+
+.pub-title {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.pub-authors {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #333;
+  margin: 2px 0 2px 16px;
+}
+
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 2px 0 2px 16px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pub-actions a {
+  color: #1a5276;
+  text-decoration: none;
+}
+
+.pub-actions a:hover {
+  text-decoration: underline;
+}
+
+.abstract-box {
+  display: contents;
+}
+
+.abstract-box summary {
+  color: #1a5276;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.abstract-box summary:hover {
+  text-decoration: underline;
+}
+
+.abstract-box summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-box summary::before {
+  content: "[";
+}
+
+.abstract-box summary::after {
+  content: "]";
+}
+
+.abstract-text {
+  flex-basis: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #333;
+  text-align: justify;
+  border-left: 2px solid #ddd;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.item-desc {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #333;
+  margin: 8px 0 3px 16px;
+  text-align: justify;
+}
+
+.item-links {
+  font-size: 14px;
+  line-height: 1.45;
+  margin-left: 16px;
+}
+
+.item-links a {
+  color: #1a5276;
+  margin-right: 6px;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #333;
+  margin-bottom: 22px;
+  text-align: justify;
+}
+
+.course-item {
+  margin-bottom: 20px;
+}
+
+.course-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.course-info {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #333;
+  margin: 6px 0 0 16px;
+}
+
+.course-links {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 3px 0 0 16px;
+}
+
+.course-links a {
+  color: #1a5276;
+  margin-right: 6px;
+}
+
+body > h2:first-of-type {
+  margin-top: 0;
+}
+
+.pub-title,
+.course-title,
+.item-title {
+  font-weight: bold;
+}
